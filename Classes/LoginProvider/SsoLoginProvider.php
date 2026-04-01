@@ -37,7 +37,7 @@ final class SsoLoginProvider implements LoginProviderInterface
     }
 
     /**
-     * TYPO3 14+ login provider API.
+     * Alternative login provider API using request and view arguments.
      */
     public function modifyView(ServerRequestInterface $request, ViewInterface $view): string
     {

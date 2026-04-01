@@ -44,5 +44,5 @@ Compatibility
 
 According to ``composer.json`` the extension supports:
 
-- TYPO3 ``^12.4 || ^13.4 || ^14.0``
+- TYPO3 ``^12.4 || ^13.4``
 - PHP ``^8.1 || ^8.2 || ^8.3 || ^8.4 || ^8.5``
