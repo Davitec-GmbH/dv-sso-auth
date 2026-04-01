@@ -1,5 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect x="8" y="10" width="48" height="44" rx="4" fill="#1e3a8a"/>
-  <path d="M22 28h20v4H22zm0 8h14v4H22z" fill="#fff"/>
-  <circle cx="44" cy="36" r="8" fill="#22c55e"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#142A44;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#77B842;}
+</style>
+    <path class="st0" d="M5.6,11.5h0.3c0.5,0,1,0.4,1,1v0.6c0,0.5-0.4,1-1,1H4.9c-0.5,0-1-0.4-1-1l0-1.2c0-0.5-0.4-1-0.9-1H2
+	c-0.5,0-1-0.4-1-1V9.3c0-0.5,0.4-1,1-1H3c0.9,0,1.6-0.7,1.6-1.6V6.1c0-0.5,0.4-1,1-1h1.1c0.5,0,1,0.4,1,1v0.6c0,0.5-0.4,1-1,1h-1
+	C4.8,7.7,4,8.4,4,9.3v0.6v0C4,10.8,4.8,11.5,5.6,11.5L5.6,11.5z"/>
+    <path class="st0" d="M10.4,4.5h-0.3c-0.5,0-1-0.4-1-1V2.9c0-0.5,0.4-1,1-1h1.1c0.5,0,1,0.4,1,1l0,1.2c0,0.5,0.4,1,0.9,1H14
+	c0.5,0,1,0.4,1,1v0.6c0,0.5-0.4,1-1,1H13c-0.9,0-1.6,0.7-1.6,1.6v0.6c0,0.5-0.4,1-1,1H9.3c-0.5,0-1-0.4-1-1V9.3c0-0.5,0.4-1,1-1h1
+	c0.9,0,1.6-0.7,1.6-1.6V6.1v0C12,5.2,11.2,4.5,10.4,4.5L10.4,4.5z"/>
+    <path class="st1" d="M8.3,6.1v0.6c0,0.9-0.7,1.6-1.6,1.6h-1c-0.5,0-1,0.4-1,1v0.6c0,0.5,0.4,1,1,1h0.3h0.8c0.5,0,1-0.4,1-1V9.3
+	c0-0.9,0.7-1.6,1.6-1.6h1c0.5,0,1-0.4,1-1V6.1c0-0.5-0.4-1-1-1h-0.3H9.3C8.8,5.1,8.3,5.5,8.3,6.1L8.3,6.1z"/>
 </svg>
