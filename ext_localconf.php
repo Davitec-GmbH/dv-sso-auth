@@ -48,17 +48,18 @@ defined('TYPO3') || die();
         ],
         [
             FrontendLoginController::class => 'index,showLogin,loginSuccess,showLogout,logoutSuccess',
-        ]
+        ],
+        ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
     );
 
     // Fallback for installations that do not include a "defaultContentRendering" TypoScript set.
-    // configurePlugin() injects this object after that include; without it, the list_type would be unresolved.
+    // configurePlugin() injects this object after that include; without it, the CType would be unresolved.
     ExtensionManagementUtility::addTypoScript(
         'dv_sso_auth',
         'setup',
         '
-tt_content.list.20.dvssoauth_login = EXTBASEPLUGIN
-tt_content.list.20.dvssoauth_login {
+tt_content.dvssoauth_login = EXTBASEPLUGIN
+tt_content.dvssoauth_login {
     extensionName = DvSsoAuth
     pluginName = Login
 }
