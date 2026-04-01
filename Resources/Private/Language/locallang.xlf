@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="dv_sso_auth">
+		<header/>
+		<body>
+			<trans-unit id="sso_login" xml:space="preserve">
+				<source>Intranet login</source>
+			</trans-unit>
+			<trans-unit id="logout" xml:space="preserve">
+				<source>Logout</source>
+			</trans-unit>
+			<trans-unit id="backend_login.header" xml:space="preserve">
+				<source>Intranet login</source>
+			</trans-unit>
+			<trans-unit id="backend_login.message" xml:space="preserve">
+				<source>Click the button to login with your SSO account.</source>
+			</trans-unit>
+			<trans-unit id="backend_login.loginprovider_link" xml:space="preserve">
+				<source>to Admin Login</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,11 @@
+plugin.tx_dvssoauth {
+  view {
+    templateRootPath = EXT:dv_sso_auth/Resources/Private/Templates/
+    partialRootPath = EXT:dv_sso_auth/Resources/Private/Partials/
+    layoutRootPath = EXT:dv_sso_auth/Resources/Private/Layouts/
+  }
+
+  settings {
+    idLogoutReturn = 1
+  }
+}

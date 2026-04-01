@@ -1,0 +1,15 @@
+plugin.tx_dvssoauth {
+  view {
+    templateRootPaths.10 = {$plugin.tx_dvssoauth.view.templateRootPath}
+    partialRootPaths.10 = {$plugin.tx_dvssoauth.view.partialRootPath}
+    layoutRootPaths.10 = {$plugin.tx_dvssoauth.view.layoutRootPath}
+  }
+
+  persistence {
+    storagePid =
+  }
+
+  features {
+    ignoreAllEnableFieldsInBe = 0
+  }
+}

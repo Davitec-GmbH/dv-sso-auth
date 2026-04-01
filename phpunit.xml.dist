@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="Tests/bootstrap.php" colors="true" cacheResult="false">
+  <testsuites>
+    <testsuite name="dv_sso_auth unit">
+      <directory>Tests/Unit</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

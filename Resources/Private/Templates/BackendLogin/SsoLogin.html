@@ -1,0 +1,31 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Login" />
+
+<f:section name="loginFormFields">
+  <style>
+    form[action="/typo3/login?loginProvider=1711441200"] .t3js-login-submit {
+      display: none !important;
+    }
+  </style>
+
+  <p><f:translate extensionName="dv_sso_auth" key="backend_login.message" /></p>
+  <div class="form-group mb-2">
+    <a class="btn btn-block btn-login" href="{ssoLoginUri}">
+      <f:translate key="login.submit" extensionName="backend" />
+    </a>
+  </div>
+  <div id="loginProviderLinkLabel" style="display: none;"><f:translate extensionName="dv_sso_auth" key="backend_login.loginprovider_link" /></div>
+  <script type="application/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+      var loginProviderLink = document.querySelector('.t3js-loginprovider-switch > a > span:not(.t3js-icon)');
+      var newLabel = document.querySelector('#loginProviderLinkLabel');
+      if (loginProviderLink && newLabel) {
+        loginProviderLink.innerHTML = newLabel.innerHTML;
+      }
+    }, false);
+  </script>
+</f:section>
+
+</html>

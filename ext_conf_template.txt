@@ -1,0 +1,53 @@
+# cat=basic/enable; type=boolean; label=Backend: Enable SSO authentication for backend users.
+enableBE = 0
+
+# cat=basic/enable; type=boolean; label=Frontend: Enable SSO authentication for frontend users.
+enableFE = 0
+
+# cat=basic/enable; type=boolean; label=Auto import FE users from IdP attributes.
+enableAutoImport = 0
+
+# cat=basic/enable; type=boolean; label=Auto import BE users from IdP attributes.
+enableBackendAutoImport = 0
+
+# cat=basic; type=string; label=Required affiliation for backend auto import (empty = allow all).
+backendAutoImportGroup = BackendGroup
+
+# cat=basic/enable; type=boolean; label=Force auth service FE execution when no session exists.
+FE_fetchUserIfNoSession = 0
+
+# cat=basic/enable; type=boolean; label=Force auth service BE execution when no session exists.
+BE_fetchUserIfNoSession = 1
+
+# cat=basic/enable; type=boolean; label=Force SSL for generated login URLs.
+forceSSL = 1
+
+# cat=basic/enable; type=boolean; label=Allow backend authentication only through SSO.
+onlySsoBE = 0
+
+# cat=basic; type=int+; label=Auth service priority (max 100).
+priority = 90
+
+# cat=basic; type=int+; label=Storage PID for FE users and FE groups.
+storagePid = 0
+
+# cat=basic; type=string; label=SSO login handler path.
+loginHandler = /Shibboleth.sso/Login
+
+# cat=basic; type=string; label=SSO logout handler path.
+logoutHandler = /Shibboleth.sso/Logout
+
+# cat=basic; type=string; label=Server variable containing the remote username.
+remoteUser = REMOTE_USER
+
+# cat=basic; type=string; label=Server variable containing user email.
+mail = mail
+
+# cat=basic; type=string; label=Server variable containing display name.
+displayName = displayName
+
+# cat=basic; type=string; label=Server variable containing affiliations.
+eduPersonAffiliation = affiliation
+
+# cat=basic; type=string; label=Template path for TYPO3 backend login provider.
+typo3LoginTemplate = EXT:dv_sso_auth/Resources/Private/Templates/BackendLogin/SsoLogin.html

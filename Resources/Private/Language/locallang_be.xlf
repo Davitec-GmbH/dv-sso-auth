@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="dv_sso_auth">
+		<header/>
+		<body>
+			<trans-unit id="pluginLabel" xml:space="preserve">
+				<source>SSO Login</source>
+			</trans-unit>
+			<trans-unit id="flexform.sheetTitle" xml:space="preserve">
+				<source>Configuration</source>
+			</trans-unit>
+			<trans-unit id="flexform.redirectPage" xml:space="preserve">
+				<source>Redirect to page after login</source>
+			</trans-unit>
+			<trans-unit id="flexform.logoutRedirectPage" xml:space="preserve">
+				<source>Redirect to page after logout</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
