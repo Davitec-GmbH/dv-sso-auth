@@ -1,6 +1,6 @@
-# dv_sso_auth
+# SSO Auth
 
-`dv_sso_auth` is a TYPO3 extension for SSO-based authentication with
+`SSO Auth` is a TYPO3 extension for SSO-based authentication with
 Shibboleth-focused defaults.
 
 ## Features

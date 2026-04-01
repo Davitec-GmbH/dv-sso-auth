@@ -4,13 +4,13 @@
 		<header/>
 		<body>
 			<trans-unit id="sso_login" xml:space="preserve">
-				<source>Intranet login</source>
+				<source>SSO Login</source>
 			</trans-unit>
 			<trans-unit id="logout" xml:space="preserve">
 				<source>Logout</source>
 			</trans-unit>
 			<trans-unit id="backend_login.header" xml:space="preserve">
-				<source>Intranet login</source>
+				<source>SSO Login</source>
 			</trans-unit>
 			<trans-unit id="backend_login.message" xml:space="preserve">
 				<source>Click the button to login with your SSO account.</source>

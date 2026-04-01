@@ -1,7 +1,7 @@
 <?php
 
 $EM_CONF['dv_sso_auth'] = [
-    'title' => 'dv_sso_auth',
+    'title' => 'SSO Auth',
     'description' => 'SSO authentication for TYPO3 CMS with Shibboleth-focused defaults.',
     'category' => 'plugin',
     'author' => 'Davitec GmbH',

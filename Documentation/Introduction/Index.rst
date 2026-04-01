@@ -11,7 +11,7 @@ Introduction
 What does it do?
 ================
 
-**DV SSO Auth** integrates Shibboleth-based single sign-on (SSO) into TYPO3.
+**SSO Auth** integrates Shibboleth-based single sign-on (SSO) into TYPO3.
 It provides a dedicated TYPO3 authentication service and optional user
 provisioning for frontend and backend accounts.
 

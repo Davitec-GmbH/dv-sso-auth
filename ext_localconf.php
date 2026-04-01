@@ -73,7 +73,7 @@ tt_content.dvssoauth_login {
         'auth',
         SsoAuthenticationService::class,
         [
-            'title' => 'SSO Authentication',
+            'title' => 'SSO Auth',
             'description' => 'SSO authentication service for TYPO3 frontend and backend.',
             'subtype' => implode(',', $subTypes),
             'available' => true,

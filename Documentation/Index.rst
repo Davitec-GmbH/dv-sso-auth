@@ -1,7 +1,7 @@
 .. include:: /Includes.rst.txt
 
 ===========
-DV SSO Auth
+SSO Auth
 ===========
 
 :Extension key:

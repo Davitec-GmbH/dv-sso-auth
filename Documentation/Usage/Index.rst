@@ -15,7 +15,7 @@ Use the **SSO Login** plugin (``dvssoauth_login``) on a frontend page.
 
 Default behavior:
 
-1. Anonymous users see an **Intranet login** link.
+1. Anonymous users see an **SSO Login** link.
 2. The link points to ``loginHandler`` with an encoded ``target`` URL.
 3. The target URL is normalized to contain ``logintype=login`` and ``pid``
    (including signed PID if TYPO3 login signing is active).

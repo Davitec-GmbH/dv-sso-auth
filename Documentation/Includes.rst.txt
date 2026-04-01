@@ -2,5 +2,5 @@
    It contains common substitutions.
 
 .. |extension_key| replace:: dv_sso_auth
-.. |extension_name| replace:: DV SSO Auth
+.. |extension_name| replace:: SSO Auth
 .. |composer_name| replace:: davitec/dv-sso-auth
