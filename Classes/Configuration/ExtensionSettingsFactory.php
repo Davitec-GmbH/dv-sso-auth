@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Davitec\DvSsoAuth\Configuration;
 
 use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
+use TYPO3\CMS\Core\Configuration\Exception\ExtensionConfigurationExtensionNotConfiguredException;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 final class ExtensionSettingsFactory
@@ -38,7 +39,11 @@ final class ExtensionSettingsFactory
 
     public function createFromExtensionConfiguration(string $extensionKey): ExtensionSettings
     {
-        $configuration = GeneralUtility::makeInstance(ExtensionConfiguration::class)->get($extensionKey);
+        try {
+            $configuration = GeneralUtility::makeInstance(ExtensionConfiguration::class)->get($extensionKey);
+        } catch (ExtensionConfigurationExtensionNotConfiguredException) {
+            $configuration = [];
+        }
 
         if (!is_array($configuration)) {
             $configuration = [];

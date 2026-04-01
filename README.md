@@ -37,5 +37,14 @@ Unit tests are located in `Tests/Unit` and cover core helper logic:
 Run (once PHPUnit is available in your environment):
 
 ```bash
-vendor/bin/phpunit -c packages/dv_sso_auth/phpunit.xml.dist
+vendor/bin/phpunit -c packages/dv-sso-auth/phpunit.xml.dist
+```
+
+Run functional tests:
+
+```bash
+vendor/bin/phpunit \
+  --bootstrap vendor/typo3/testing-framework/Resources/Core/Build/FunctionalTestsBootstrap.php \
+  -c packages/dv-sso-auth/Tests/phpunit.xml \
+  --testsuite Functional
 ```
