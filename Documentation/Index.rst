@@ -11,7 +11,7 @@ SSO Auth
    davitec/dv-sso-auth
 
 :Version:
-   |release|
+   1.0.3
 
 :Author:
    Davitec GmbH, +Pluswerk Standort Dresden
