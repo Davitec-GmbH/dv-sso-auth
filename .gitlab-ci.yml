@@ -1,0 +1,8 @@
+test-documentation:
+  image: ghcr.io/typo3-documentation/render-guides:latest
+  script:
+    - mkdir -p Documentation-GENERATED-temp
+    - /opt/guides/vendor/bin/guides --config=Documentation --no-progress --fail-on-log
+  rules:
+    - changes:
+        - Documentation/**/*
