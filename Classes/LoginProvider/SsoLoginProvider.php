@@ -13,8 +13,13 @@ use TYPO3\CMS\Core\View\ViewInterface;
 
 final class SsoLoginProvider implements LoginProviderInterface
 {
-    public function __construct(private readonly ExtensionSettingsFactory $settingsFactory)
+    private readonly ExtensionSettingsFactory $settingsFactory;
+
+    public function __construct(?ExtensionSettingsFactory $settingsFactory = null)
     {
+        // Backend login providers are instantiated through GeneralUtility from
+        // TYPO3_CONF_VARS, which does not resolve constructor dependencies.
+        $this->settingsFactory = $settingsFactory ?? GeneralUtility::makeInstance(ExtensionSettingsFactory::class);
     }
 
     /**
@@ -42,9 +47,12 @@ final class SsoLoginProvider implements LoginProviderInterface
     public function modifyView(ServerRequestInterface $request, ViewInterface $view): string
     {
         $settings = $this->settingsFactory->createFromExtensionConfiguration('dv_sso_auth');
-        $templatePath = $this->resolveTemplatePath($settings);
         $view->assign('ssoLoginUri', $this->buildSsoLoginUri($settings));
-        return $templatePath;
+        $view->getRenderingContext()->getTemplatePaths()->setTemplatePathAndFilename(
+            $this->resolveTemplatePath($settings)
+        );
+
+        return '';
     }
 
     private function buildSsoLoginUri(ExtensionSettings $settings): string
