@@ -8,10 +8,10 @@ $EM_CONF['dv_sso_auth'] = [
     'author_email' => 'devops@davitec.de',
     'author_company' => 'Davitec GmbH, +Pluswerk Standort Dresden',
     'state' => 'stable',
-    'version' => '1.0.5',
+    'version' => '1.1.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '12.4.0-13.99.99',
+            'typo3' => '12.4.0-14.99.99',
             'php' => '8.1.0-8.5.99',
         ],
         'conflicts' => [],

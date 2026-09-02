@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use Davitec\DvSsoAuth\Middleware\RedirectBackendLogoutThroughShibbolethMiddleware;
 use Davitec\DvSsoAuth\Middleware\ResetBrokenFrontendSessionMiddleware;
 
 return [
@@ -14,6 +15,11 @@ return [
             'before' => [
                 'typo3/cms-frontend/authentication',
             ],
+        ],
+    ],
+    'backend' => [
+        'davitec/dv-sso-auth/redirect-backend-logout-through-shibboleth' => [
+            'target' => RedirectBackendLogoutThroughShibbolethMiddleware::class,
         ],
     ],
 ];
