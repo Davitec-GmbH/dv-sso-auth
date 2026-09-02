@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 use Davitec\DvSsoAuth\Configuration\ExtensionSettingsFactory;
 use Davitec\DvSsoAuth\Controller\FrontendLoginController;
-use Davitec\DvSsoAuth\Hook\UserAuthentication;
 use Davitec\DvSsoAuth\LoginProvider\SsoLoginProvider;
 use Davitec\DvSsoAuth\Typo3\Service\SsoAuthenticationService;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
@@ -27,8 +26,6 @@ defined('TYPO3') || die();
         $subTypes[] = 'authUserBE';
 
         $GLOBALS['TYPO3_CONF_VARS']['SVCONF']['auth']['setup']['BE_fetchUserIfNoSession'] = $settings->beFetchUserIfNoSession;
-
-        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_userauth.php']['logoff_post_processing'][] = UserAuthentication::class . '->backendLogoutHandler';
 
         $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['backend']['loginProviders'][1711441200] = [
             'provider' => SsoLoginProvider::class,
